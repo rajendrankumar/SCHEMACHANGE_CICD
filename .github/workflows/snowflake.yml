@@ -27,6 +27,9 @@ jobs:
 
       - name: Debug workspace
         run: ls -R $GITHUB_WORKSPACE
+      - name: Verify vars.json readability
+        run: cat $GITHUB_WORKSPACE/vars.json
+  
 
       - name: Run schemachange
         env:
