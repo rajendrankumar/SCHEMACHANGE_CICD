@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: 3.8.x
 
+      - name: Debug workspace
+        run: ls -R $GITHUB_WORKSPACE
+
       - name: Run schemachange
         env:
           SF_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
